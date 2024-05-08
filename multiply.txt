@@ -1,0 +1,17 @@
+#include <xc.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<pic18f4520.h>
+
+int main()
+{
+    int product = 0;
+    product = 0x002 * 0x004;
+    
+    TRISD=0;
+    PORTD=product;
+    
+    return 0;
+}
+
+

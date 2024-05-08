@@ -1,0 +1,15 @@
+#include <xc.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<pic18f4520.h>
+
+int main()
+{
+    int div = 0;
+    div = 0x008/0x002;
+    
+    TRISD=0;
+    PORTD=div;
+    
+    return 0;
+}

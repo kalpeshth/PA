@@ -1,0 +1,16 @@
+#include<xc.h>
+#include<pic18f4520.h>
+#include<stdlib.h>
+#include<stdio.h>
+
+int main()
+{
+    int sum;
+    sum=0;
+    
+    sum=0x003+0x005;
+    TRISD=0;
+    PORTD=sum;
+    
+    return 0;
+} 
